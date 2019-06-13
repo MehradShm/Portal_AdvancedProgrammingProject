@@ -10,4 +10,4 @@ This project developed with JavaFX.
 
 
 # License
-All codes are release under the MIT license.
+All codes are release under the [MIT license](LICENSE).
