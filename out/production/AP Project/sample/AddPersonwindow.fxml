@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="667.0" style="-fx-background-color: #070517;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddPersonWindowController">
+   <children>
+      <AnchorPane layoutX="57.0" layoutY="70.0" prefHeight="330.0" prefWidth="254.0" style="-fx-background-color: #781212;">
+         <children>
+            <Label layoutX="103.0" layoutY="14.0" text="Teacher" textFill="#d3d3d3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TeacherName" layoutX="53.0" layoutY="62.0" promptText="Name" style="-fx-background-color: #952828;" />
+            <TextField fx:id="TeacherFamily" layoutX="53.0" layoutY="111.0" promptText="Family" style="-fx-background-color: #952828;" />
+            <TextField fx:id="TeacherID" layoutX="53.0" layoutY="159.0" promptText="ID" style="-fx-background-color: #952828;" />
+            <TextField fx:id="TeacherDepartmentname" layoutX="53.0" layoutY="201.0" promptText="Department Name" style="-fx-background-color: #952828;" />
+            <Button fx:id="AddStudent" layoutX="102.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleAddTeacherButtonAction" style="-fx-background-color: #CA5959;" text="Ok" textFill="#dadada" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="381.0" layoutY="70.0" prefHeight="330.0" prefWidth="254.0" style="-fx-background-color: #781212;">
+         <children>
+            <Label layoutX="103.0" layoutY="14.0" text="Student" textFill="#dad9d9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="StudentName" layoutX="53.0" layoutY="51.0" promptText="Name" style="-fx-background-color: #952828;" />
+            <TextField fx:id="StudentFamily" layoutX="53.0" layoutY="89.0" promptText="Family" style="-fx-background-color: #952828;" />
+            <TextField fx:id="StudentID" layoutX="53.0" layoutY="127.0" promptText="ID" style="-fx-background-color: #952828;" />
+            <TextField fx:id="StudentAdvisorID" layoutX="53.0" layoutY="165.0" promptText="Advisor ID" style="-fx-background-color: #952828;" />
+            <TextField fx:id="StudentDepartmentname" layoutX="53.0" layoutY="202.0" promptText="Department Name" style="-fx-background-color: #952828;" />
+            <TextField fx:id="StudentMajorname" layoutX="53.0" layoutY="243.0" promptText="Major Name" style="-fx-background-color: #952828;" />
+            <Button fx:id="AddTeacher" layoutX="111.0" layoutY="282.0" mnemonicParsing="false" onAction="#handleAddStudentButtonAction" style="-fx-background-color: #CA5959;" text="Ok" textFill="#e1e0e0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="320.0" layoutY="23.0" text="Add" textFill="#cdcdcd">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="close" layoutX="623.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" style="-fx-background-color: #070517;" text="X" textFill="#dadada" />
+   </children>
+</AnchorPane>

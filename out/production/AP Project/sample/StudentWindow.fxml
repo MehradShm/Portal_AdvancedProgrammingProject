@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1B0A0A;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="sample.StudentWindowController">
+   <children>
+      <ImageView fitHeight="408.0" fitWidth="405.0" layoutX="195.0" opacity="0.32" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/Untitled.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="403.0" prefWidth="196.0" style="-fx-background-color: #781212;">
+         <children>
+            <Button fx:id="information" layoutX="59.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleInformationButtonAction" style="-fx-background-color: #781212;" text="Information" textFill="#d0cfcf" />
+            <Button fx:id="result" layoutX="73.0" layoutY="91.0" mnemonicParsing="false" onAction="#handleResultButtonAction" style="-fx-background-color: #781212;" text="Results" textFill="#d3d3d3" />
+            <Button fx:id="pickSubject" layoutX="60.0" layoutY="144.0" mnemonicParsing="false" onAction="#handlePickSubjectButtonAction" style="-fx-background-color: #781212;" text="Pick Subject" textFill="#d7d7d7" />
+            <Button fx:id="emergencyRemove" layoutX="40.0" layoutY="202.0" mnemonicParsing="false" onAction="#handleEmergencyRemoveButtonAction" style="-fx-background-color: #781212;" text="Emergency Remove" textFill="#d0cdcd" />
+            <Button fx:id="refertoAdvisor" layoutX="52.0" layoutY="251.0" mnemonicParsing="false" onAction="#handleRefertoAdvisorButtonAction" style="-fx-background-color: #781212;" text="Referto Adviser" textFill="#c9c9c9" />
+            <Button fx:id="evalution" layoutX="63.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleEvaluationButtonAction" style="-fx-background-color: #781212;" text="Evaluation" textFill="#dadada" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="close" layoutX="562.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" style="-fx-background-color: #000000;" text="X" textFill="#cdcdcd" />
+      <Label layoutX="300.0" layoutY="84.0" text="Welcome Student!" textFill="#c3c3c3">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

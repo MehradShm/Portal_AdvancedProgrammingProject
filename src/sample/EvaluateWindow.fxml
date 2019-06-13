@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="204.0" prefWidth="447.0" style="-fx-background-color: #070517;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EvaluateWindowController">
+   <children>
+      <TextField fx:id="teacherName" editable="false" layoutX="97.0" layoutY="75.0" prefHeight="25.0" prefWidth="132.0" promptText="Teacher's Name" />
+      <Label layoutX="25.0" layoutY="77.0" text="Evaluate:" textFill="#bfbfbf">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="subjectName" editable="false" layoutX="249.0" layoutY="75.0" promptText="Subject's Name" />
+      <Button fx:id="goodEvaluate" layoutX="175.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleGoodEvaluateButtonAction" style="-fx-background-color: #781212;" text="Good" textFill="#cdcdcd" />
+      <Button fx:id="badEvaluate" layoutX="239.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleBadEvaluateButtonActon" style="-fx-background-color: #781212;" text="Bad" textFill="#cdcdcd" />
+      <Button fx:id="close" layoutX="416.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" style="-fx-background-color: #070517;" text="X" textFill="#d7d4d4" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="223.0" prefWidth="475.0" style="-fx-background-color: #070517;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RefertoAdvisorRequestWindowController">
+   <children>
+      <Label layoutX="21.0" layoutY="71.0" text="Request From:" textFill="#bfbfbf">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="LeftText" layoutX="134.0" layoutY="69.0" prefHeight="25.0" prefWidth="117.0" promptText="Studnt's ID" />
+      <TextField fx:id="RightText" layoutX="289.0" layoutY="69.0" prefHeight="25.0" prefWidth="131.0" promptText="Name &amp; FamilyName" />
+      <Button fx:id="accept" layoutX="193.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleAcceptButtonAction" style="-fx-background-color: #781212;" text="Accept" textFill="#c6c6c6" />
+      <Button fx:id="reject" layoutX="294.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleRejectButtonAction" style="-fx-background-color: #781212;" text="Reject" textFill="#c6c1c1" />
+      <Button fx:id="close" layoutX="459.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" style="-fx-background-color: #070517;" text="X" textFill="#dadada" />
+   </children>
+</AnchorPane>

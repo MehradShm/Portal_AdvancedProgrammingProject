@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #070517;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EmergencyRemoveWindowController">
+   <children>
+      <TextArea fx:id="textEmergencyRemove" editable="false" layoutX="75.0" layoutY="58.0" prefHeight="162.0" prefWidth="451.0" />
+      <TextField fx:id="idSubjectRemove" layoutX="301.0" layoutY="272.0" />
+      <Button fx:id="okEmergency" layoutX="284.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleOkEmergencyButtonAction" style="-fx-background-color: #781212;" text="Ok" textFill="#c6c1c1" />
+      <Button fx:id="close" layoutX="562.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" style="-fx-background-color: #070517;" text="X" textFill="#cdcdcd" />
+      <Label layoutX="120.0" layoutY="276.0" text="Enter Subject's ID to Remove:" textFill="#b9b4b4" />
+   </children>
+</AnchorPane>
